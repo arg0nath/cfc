@@ -27,16 +27,22 @@ void createStructure(String feature, Directory baseDir) {
     'data/datasources/local/${feature}_local_datasource.dart',
     'data/models/${feature}_dto.dart',
     'domain/repo/${feature}_repo.dart',
-    'domain/entity/${feature}.dart',
-    'domain/usecases/',
+    'domain/entity/$feature.dart',
+    'domain/usecases/', // this can be left empty for now
     'presentation/pages/${feature}_page.dart',
   ];
 
   for (final path in paths) {
     final fullPath = '${baseDir.path}/$path';
     final file = File(fullPath);
-    file.createSync(recursive: true);
-    file.writeAsStringSync('// $path');
+
+    if (!file.path.endsWith('/')) {
+      file.createSync(recursive: true);
+      final template = getTemplate(path, feature);
+      file.writeAsStringSync(template);
+    } else {
+      Directory(fullPath).createSync(recursive: true);
+    }
   }
 }
 
