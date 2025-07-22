@@ -1,22 +1,22 @@
-# 🧼 Clean Folder Creator
-
-**CFC** is a Dart CLI tool that automates the creation of **feature-driven folders** following the **Clean Architecture** pattern in Flutter projects.  
 [![pub package](https://img.shields.io/pub/v/cfc.svg)](https://pub.dev/packages/cfc)
 
+# 🧼 Clean Folder Creator
+
 > ✨ Save time. Stay consistent. Scale your codebase the clean way.
----
+
+**CFC** is a Dart CLI tool that automates the creation of **feature-driven folders** following the **Clean Architecture** pattern in Flutter projects.  
 
 ## 🚀 Getting Started
 
-### 1. Install Locally
+### 1. Install Globaly
 
 ```bash
 dart pub global activate --source path .
 ```
 
-This lets you run cfc from anywhere in your terminal.
-
 ### 2. Usage
+
+In project directory just run:
 
 ```bash
 cfc <feature_name>
@@ -26,6 +26,7 @@ cfc <feature_name>
 
 CFC generates a full boilerplate structure inside your Flutter `lib/` directory for a given feature name, including:  
 
+```plaintext
 lib/
 └── features/
     └── your_feature/
@@ -48,49 +49,24 @@ lib/
     └── presentation/
          pages/
         └── your_feature_page.dart
-  
-Each file is pre-filled with basic template code (classes, stubs, and comments) to jump-start your feature development.
-  
----
-
-## 📌 Example
-
-```bash
-cfc type_selection
 ```
 
-This will create the full structure inside:
-
-lib/features/type_selection/
-
-## ✅ Class names are auto-formatted (PascalCase / camelCase) based on the feature name
-
-## 🔧 Clean Architecture folder layout
-
-## ✨ Auto-generated boilerplate for
-
-1) Data sources (remote/local)
-2) DTOs
-3) Repositories
-4) Domain entities
-5) UI Pages
-
-## 🧠 Smart name formatting (snake_case, PascalCase, camelCase)
-
-## 🛠 Easy to extend with your own templates and naming rules
-
-## 🗺 Roadmap
+Each file is pre-filled with basic template code (classes, stubs, and comments) to jump-start your feature development.
   
-### 🤝 Contributing
+- ✅ Class names based on the feature name
 
-1) Contributions and feature requests are welcome!
-2) Fork the repo
-3) Add your changes
-4) Open a PR
-  
+- 🔧 Clean Architecture folder layout
+
+- ✨ Auto-generated boilerplate for
+    1) Data sources (remote/local)
+    2) DTOs
+    3) Repositories
+    4) Domain entities
+    5) UI Pages
+
 ### 📄 License
 
-MIT License © 2025 — Built with ❤️ for clean, scalable Flutter codebases.
+MIT License © 2025 arg0nath — Built with ❤️ for clean, scalable Flutter codebases.
 
 🙌 Credits
 
