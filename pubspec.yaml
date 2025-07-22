@@ -1,6 +1,6 @@
 name: cfc
 description: A CLI tool to scaffold clean architecture feature folders in Flutter.
-version: 1.0.3
+version: 1.0.4
 homepage: https://github.com/arg0nath/cfc
 repository: https://github.com/arg0nath/cfc
 issue_tracker: https://github.com/arg0nath/cfc/issues

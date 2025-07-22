@@ -39,7 +39,7 @@ lib/
     │ ├── models/
     │ │ └── your_feature_dto.dart
     │ └── repo/
-    │ └── your_feature_impl.dart
+    │ └── your_feature_repo_impl.dart
     ├── domain/
     │ ├── entity/
     │ │ └── your_feature.dart
