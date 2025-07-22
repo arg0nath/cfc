@@ -13,10 +13,7 @@ void main(List<String> arguments) {
   print('✅ Feature "$featureName" created.');
 }
 
-String toPascalCase(String input) => input
-    .split('_')
-    .map((word) => word[0].toUpperCase() + word.substring(1))
-    .join();
+String toPascalCase(String input) => input.split('_').map((word) => word[0].toUpperCase() + word.substring(1)).join();
 
 String toCamelCase(String input) {
   final pascal = toPascalCase(input);
@@ -82,9 +79,9 @@ class ${className}LocalDatasource {
 
   if (path.contains('models/') && path.endsWith('_dto.dart')) {
     return '''
-import '../../../domain/entity/${feature}.dart';
+import '../../../domain/entity/$feature.dart';
 
-class ${className}Dto extends ${className} {
+class ${className}Dto extends $className {
   // TODO: implement JSON serialization
 }
 ''';
@@ -100,7 +97,7 @@ abstract class ${className}Repo {
 
   if (path.contains('domain/entity/')) {
     return '''
-class ${className} {
+class $className {
   // TODO: define entity fields
 }
 ''';

@@ -12,3 +12,5 @@ executables:
   cfc: cfc
 dev_dependencies:
   test: ^1.26.3
+dependencies:
+  lints: ^6.0.0
