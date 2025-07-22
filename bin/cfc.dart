@@ -13,10 +13,7 @@ void main(List<String> arguments) {
   print('✅ Feature "$featureName" created.');
 }
 
-String toPascalCase(String input) => input
-    .split('_')
-    .map((word) => word[0].toUpperCase() + word.substring(1))
-    .join();
+String toPascalCase(String input) => input.split('_').map((word) => word[0].toUpperCase() + word.substring(1)).join();
 
 String toCamelCase(String input) {
   final pascal = toPascalCase(input);
@@ -25,7 +22,7 @@ String toCamelCase(String input) {
 
 void createStructure(String feature, Directory baseDir) {
   final paths = [
-    'data/repo/${feature}_impl.dart',
+    'data/repo/${feature}_repo_impl.dart',
     'data/datasources/remote/${feature}_remote_datasource.dart',
     'data/datasources/local/${feature}_local_datasource.dart',
     'data/models/${feature}_dto.dart',
