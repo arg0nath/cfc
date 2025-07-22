@@ -1,6 +1,7 @@
-# 🧼 CFC - Clean Folder Creator
+# 🧼 Clean Folder Creator
 
 **CFC** is a Dart CLI tool that automates the creation of **feature-driven folders** following the **Clean Architecture** pattern in Flutter projects.  
+[![pub package](https://img.shields.io/pub/v/cfc.svg)](https://pub.dev/packages/cfc)
 
 > ✨ Save time. Stay consistent. Scale your codebase the clean way.
 ---
