@@ -13,7 +13,10 @@ void main(List<String> arguments) {
   print('✅ Feature "$featureName" created.');
 }
 
-String toPascalCase(String input) => input.split('_').map((word) => word[0].toUpperCase() + word.substring(1)).join();
+String toPascalCase(String input) => input
+    .split('_')
+    .map((word) => word[0].toUpperCase() + word.substring(1))
+    .join();
 
 String toCamelCase(String input) {
   final pascal = toPascalCase(input);
