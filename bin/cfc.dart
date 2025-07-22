@@ -7,7 +7,7 @@ void main(List<String> arguments) {
   }
 
   final featureName = arguments.first;
-  final baseDir = Directory('lib/$featureName');
+  final baseDir = Directory('lib/features/$featureName');
 
   createStructure(featureName, baseDir);
   print('✅ Feature "$featureName" created.');
