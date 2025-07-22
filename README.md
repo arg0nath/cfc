@@ -5,6 +5,22 @@
 > ✨ Save time. Stay consistent. Scale your codebase the clean way.
 ---
 
+## 🚀 Getting Started
+
+### 1. Install Locally
+
+```bash
+dart pub global activate --source path .
+```
+
+This lets you run cfc from anywhere in your terminal.
+
+### 2. Usage
+
+```bash
+cfc <feature_name>
+```
+
 ## 📦 What It Does
 
 CFC generates a full boilerplate structure inside your Flutter `lib/` directory for a given feature name, including:  
@@ -35,22 +51,6 @@ lib/
 Each file is pre-filled with basic template code (classes, stubs, and comments) to jump-start your feature development.
   
 ---
-
-## 🚀 Getting Started
-
-### 1. Install Locally
-
-```bash
-dart pub global activate --source path .
-```
-
-This lets you run cfc from anywhere in your terminal.
-
-### 2. Usage
-
-```bash
-cfc <feature_name>
-```
 
 ## 📌 Example
 
