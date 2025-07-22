@@ -13,10 +13,7 @@ void main(List<String> arguments) {
   print('✅ Feature "$featureName" created.');
 }
 
-String toPascalCase(String input) => input
-    .split('_')
-    .map((word) => word[0].toUpperCase() + word.substring(1))
-    .join();
+String toPascalCase(String input) => input.split('_').map((word) => word[0].toUpperCase() + word.substring(1)).join();
 
 String toCamelCase(String input) {
   final pascal = toPascalCase(input);
@@ -52,7 +49,6 @@ void createStructure(String feature, Directory baseDir) {
 // Generates the template content based on the path and feature name
 String getTemplate(String path, String feature) {
   final className = toPascalCase(feature);
-  final varName = toCamelCase(feature);
 
   if (path.contains('repo/') && path.endsWith('_impl.dart')) {
     return '''
