@@ -14,6 +14,12 @@
 dart pub global activate --source path .
 ```
 
+and then
+
+```bash
+dart pub global activate cfc
+```
+
 ### 2. Usage
 
 In project directory just run:
