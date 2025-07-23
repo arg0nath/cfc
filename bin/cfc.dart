@@ -55,8 +55,7 @@ String getTemplate(String path, String feature) {
 
   if (path.contains('repo/') && path.endsWith('_impl.dart')) {
     return '''
-import '../../models/${feature}_dto.dart';
-import '../../../domain/repo/${feature}_repo.dart';
+import '../../domain/repo/${feature}_repo.dart';
 
 class ${className}Impl implements ${className}Repo {
   // TODO: implement repository methods
@@ -66,23 +65,33 @@ class ${className}Impl implements ${className}Repo {
 
   if (path.contains('remote/') && path.endsWith('_remote_datasource.dart')) {
     return '''
-class ${className}RemoteDatasource {
+abstract interface class ${className}RemoteDatasource {
   // TODO: implement remote methods
 }
+
+class ${className}RemoteDatasourceImpl implements ${className}RemoteDatasource {
+  // TODO: implement remote methods
+  }
 ''';
   }
 
   if (path.contains('local/') && path.endsWith('_local_datasource.dart')) {
     return '''
-class ${className}LocalDatasource {
+abstract interface class ${className}LocalDatasource {
   // TODO: implement local methods
 }
+
+class ${className}LocalDatasourceImpl implements ${className}LocalDatasource {
+  // TODO: implement local methods
+
+}
+
 ''';
   }
 
   if (path.contains('models/') && path.endsWith('_dto.dart')) {
     return '''
-import '../../../domain/entity/$feature.dart';
+import '../../domain/entity/$feature.dart';
 
 class ${className}Dto extends $className {
   // TODO: implement JSON serialization
@@ -92,7 +101,7 @@ class ${className}Dto extends $className {
 
   if (path.contains('domain/repo/')) {
     return '''
-abstract class ${className}Repo {
+abstract interface class ${className}Repo {
   // TODO: define abstract methods
 }
 ''';
