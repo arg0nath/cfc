@@ -28,27 +28,27 @@ CFC generates a full boilerplate structure inside your Flutter `lib/` directory 
 
 ```plaintext
 lib/
-└── features/
+└─ features/
     └── your_feature/
-    ├── data/
-    │ ├── datasources/
-    │ ├── remote/
-    │ │ │ └── your_feature_remote_datasource.dart
-    │ │ └── local/
-    │ │ └── your_feature_local_datasource.dart
-    │ ├── models/
-    │ │ └── your_feature_dto.dart
-    │ └── repo/
-    │ └── your_feature_repo_impl.dart
-    ├── domain/
-    │ ├── entity/
-    │ │ └── your_feature.dart
-    │ ├── repo/
-    │ │ └── your_feature_repo.dart
-    │ └── usecases/ ← ready for use case classes
-    └── presentation/
-         pages/
-        └── your_feature_page.dart
+        ├── data/
+        │ ├── datasources/
+        │ ├── remote/
+        │ │ │ └── your_feature_remote_datasource.dart
+        │ │ └── local/
+        │ │ └── your_feature_local_datasource.dart
+        │ ├── models/
+        │ │ └── your_feature_dto.dart
+        │ └── repo/
+        │ └── your_feature_repo_impl.dart
+        ├── domain/
+        │ ├── entity/
+        │ │ └── your_feature.dart
+        │ ├── repo/
+        │ │ └── your_feature_repo.dart
+        │ └── usecases/ ← ready for use case classes
+        └── presentation/
+             pages/
+            └── your_feature_page.dart
 ```
 
 Each file is pre-filled with basic template code (classes, stubs, and comments) to jump-start your feature development.
