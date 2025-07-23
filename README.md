@@ -1,6 +1,6 @@
 [![pub package](https://img.shields.io/pub/v/cfc.svg)](https://pub.dev/packages/cfc)
 
-# 🧼 Clean Folder Creator
+# 🧼 Clean Feature Creator
 
 > ✨ Save time. Stay consistent. Scale your codebase the clean way.
 
