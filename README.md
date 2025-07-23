@@ -34,27 +34,27 @@ CFC generates a full boilerplate structure inside your Flutter `lib/` directory 
 
 ```plaintext
 lib/
-└─ features/
+└── features/
     └── your_feature/
         ├── data/
-        │ ├── datasources/
-        │ ├── remote/
-        │ │ │ └── your_feature_remote_datasource.dart
-        │ │ └── local/
-        │ │ └── your_feature_local_datasource.dart
-        │ ├── models/
-        │ │ └── your_feature_dto.dart
-        │ └── repo/
-        │ └── your_feature_repo_impl.dart
+        │   ├── datasources/
+        │   │   ├── remote/
+        │   │   │   └── your_feature_remote_datasource.dart
+        │   │   └── local/
+        │   │       └── your_feature_local_datasource.dart
+        │   ├── models/
+        │   │   └── your_feature_dto.dart
+        │   └── repo/
+        │       └── your_feature_repo_impl.dart
         ├── domain/
-        │ ├── entity/
-        │ │ └── your_feature.dart
-        │ ├── repo/
-        │ │ └── your_feature_repo.dart
-        │ └── usecases/ ← ready for use case classes
+        │   ├── entity/
+        │   │   └── your_feature.dart
+        │   ├── repo/
+        │   │   └── your_feature_repo.dart
+        │   └── usecases/  ← ready for use case classes
         └── presentation/
-             pages/
-            └── your_feature_page.dart
+            └── pages/
+                └── your_feature_page.dart
 ```
 
 Each file is pre-filled with basic template code (classes, stubs, and comments) to jump-start your feature development.
@@ -77,3 +77,13 @@ MIT License © 2025 arg0nath — Built with ❤️ for clean, scalable Flutter c
 🙌 Credits
 
 Inspired by Clean Architecture and the Flutter community.
+
+
+🚀 Introducing Clean Folder Creator (CFC)
+
+Tired of repeating the same folder structure for every feature in Flutter? 
+I built CFC – a simple Dart CLI tool that auto-generates a Clean Architecture setup with just one command. Save time, stay organized! ✨
+
+👉 Check it out on pub.dev/packages/cfc
+
+Just run: cfc your_feature, wait some milliseconds and..
